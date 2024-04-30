@@ -1,6 +1,9 @@
 name: flutter_media_session
-description: "A new Flutter project."
+description: "A simple plugin to play/pause media session on Android devices."
 version: 0.1.0
+
+platforms:
+  android:
 
 environment:
   sdk: ">=3.3.0 <4.0.0"

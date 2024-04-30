@@ -1,18 +1,19 @@
 import 'package:flutter/services.dart';
 
-class FlutterMediaSession {
-  static final FlutterMediaSession _singleton = FlutterMediaSession._internal();
+export 'flutter_media_session.dart';
 
+final class FlutterMediaSession {
   factory FlutterMediaSession() {
     return _singleton;
   }
 
   FlutterMediaSession._internal();
+  static final FlutterMediaSession _singleton = FlutterMediaSession._internal();
 
   static FlutterMediaSession get instance => _singleton;
 
   final MethodChannel _channel = const MethodChannel(
-    'com.example.media_session/session',
+    'com.synnetic.flutter_media_session/session',
   );
 
   Future<bool> initialize() async {

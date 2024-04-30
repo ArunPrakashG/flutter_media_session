@@ -1,6 +1,5 @@
-name: media_session
+name: flutter_media_session
 description: "A new Flutter project."
-publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -13,7 +12,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  personal_flutter_lints:
+    git:
+      url: https://github.com/ArunPrakashG/personal_flutter_lints.git
+      ref: main
 
 flutter:
   uses-material-design: true
@@ -21,7 +23,5 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.media_session
+        package: com.synnetic.flutter_media_session
         pluginClass: FlutterMediaSessionManagerPlugin
-      # ios:
-      #   pluginClass: FlutterMediaSessionManagerPlugin
